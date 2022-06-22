@@ -193,3 +193,7 @@ This repository is published under the [MIT][license] license.
 [shopify-storefront-api]: https://shopify.dev/api/storefront
 [shopify-analytics]: https://shopify.dev/api/hydrogen/components/framework/shopifyanalytics
 [use-sanity-query-hook]: ./src/hooks/useSanityQuery.ts
+
+
+## Shopify Storefront Password
+`rawshu`
