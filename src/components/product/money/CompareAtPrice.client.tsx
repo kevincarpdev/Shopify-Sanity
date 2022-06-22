@@ -1,6 +1,7 @@
 import {useMoney} from '@shopify/hydrogen';
 import type {MoneyV2} from '@shopify/hydrogen/storefront-api-types';
 
+
 /**
  * A client component that renders a product's compare at price
  */
