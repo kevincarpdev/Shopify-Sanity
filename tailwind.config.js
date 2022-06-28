@@ -112,7 +112,8 @@ module.exports = {
         lightGray: '#F3F3F3',
         offBlack: '#2B2E2E',
         peach: '#FFE1D1',
-        red: '#EC5039',
+        blue: '#4F89D8',
+        red: '#FE5F55',
       },
       height: {
         'header-sm': '4.375rem',
