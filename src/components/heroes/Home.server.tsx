@@ -43,11 +43,13 @@ export default function HomeHero({hero}: Props) {
         </div>
       )}
       {/* CTA Component */}
-     <div className="cta-block w-full bg-blue pb-16 pt-16">
-      <h1 className="text-center text-2xl font-bold text-lightGray pb-4 pt-4">Whats Sanity?</h1>
-      <p className="pl-12 pr-12 pb-4 text-lightGray text-center ">Nullam dictum efficitur leo non auctor. Etiam a mollis massa. Quisque congue vitae felis et viverra. Nam sed lacus in neque fermentum ullamcorper. Nulla facilisi. Fusce facilisis, odio non vulputate convallis, enim leo lobortis risus, sed venenatis arcu erat eget augue. Morbi tellus sem, dignissim non eleifend ut, fermentum et elit. Aliquam et ipsum ultrices dolor fringilla ornare nec in massa. Donec non enim quis dui mollis semper non faucibus arcu. Integer quis lobortis mauris, nec efficitur mi. Vestibulum et leo pharetra, maximus magna ut, egestas leo.</p>
-      <p className="pl-12 pr-12 pb-4 text-lightGray text-center">Link to demo?</p>
-     </div>
+      <div className="bleed angle bg-blue mt-16 mb-16">
+        <div className="cta-block pb-16 pt-16">
+          <h1 className="text-center text-2xl font-bold text-lightGray pb-4 pt-4">Whats Sanity?</h1>
+          <p className="pl-12 pr-12 pb-4 text-lightGray text-center ">Nullam dictum efficitur leo non auctor. Etiam a mollis massa. Quisque congue vitae felis et viverra. Nam sed lacus in neque fermentum ullamcorper. Nulla facilisi. Fusce facilisis, odio non vulputate convallis, enim leo lobortis risus, sed venenatis arcu erat eget augue. Morbi tellus sem, dignissim non eleifend ut, fermentum et elit. Aliquam et ipsum ultrices dolor fringilla ornare nec in massa. Donec non enim quis dui mollis semper non faucibus arcu. Integer quis lobortis mauris, nec efficitur mi. Vestibulum et leo pharetra, maximus magna ut, egestas leo.</p>
+          <p className="pl-12 pr-12 pb-4 text-lightGray text-center">Link to demo?</p>
+        </div>
+      </div>
 
      {/* Two Col*/}
 

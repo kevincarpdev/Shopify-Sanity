@@ -109,11 +109,11 @@ module.exports = {
       colors: {
         darkGray: '#757575',
         gray: '#E7E7E7',
-        lightGray: '#F3F3F3',
-        offBlack: '#2B2E2E',
-        peach: '#FFE1D1',
-        blue: '#4F89D8',
-        red: '#FE5F55',
+        lightGray: '#FFFFFC',
+        offBlack: '#0E0F19',
+        blue: '#4357AD',
+        green: '#57886C',
+        red: '#DD614A',
       },
       height: {
         'header-sm': '4.375rem',

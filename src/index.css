@@ -12,7 +12,7 @@
 
 @layer components {
   .linkTextNavigation {
-    @apply decoration-[0.1em] underline-offset-[0.1em] hover:underline;
+    @apply decoration-[0.1em] underline-offset-[0.1em] hover:underline text-offBlack hover:text-lightGray;
   }
 
   .portableText {
@@ -30,13 +30,18 @@
     ul {
       list-style: disc outside;
     }
-    
+
     ul ul {
       list-style: circle outside;
     }
     ul ul ul {
       list-style: square outside;
     }
+  }
+
+  :root {
+    --bg-blue: #4357AD;
+    --bg-offBlack: #0E0F19;
   }
 
   .select {
@@ -54,6 +59,37 @@
     padding: theme('padding.4');
     transition: all 200ms ease-out;
   }
+
+  .bleed {
+    position: relative;
+    width: 108%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .angle:before {
+    content: "";
+    background: var(--bg-blue);
+    height: 40px;
+    transform: skewY(1deg);
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.angle:after {
+    content: "";
+    background: var(--bg-blue);
+    height: 80px;
+    transform: skewY(358deg);
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
 
   .select:disabled {
     color: theme('colors.darkGray');
