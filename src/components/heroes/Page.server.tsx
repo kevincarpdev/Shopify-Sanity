@@ -25,7 +25,7 @@ export default function PageHero({colorTheme, fallbackTitle, hero}: Props) {
   return (
     <div
       className={clsx(
-        'rounded-b-xl bg-peach px-4 pb-4 pt-24', //
+        'rounded-b-xl bg-blue px-4 pb-4 pt-24', //
         'md:px-8 md:pb-8 md:pt-34',
       )}
       style={{background: colorTheme?.background}}

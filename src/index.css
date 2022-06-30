@@ -12,7 +12,7 @@
 
 @layer components {
   .linkTextNavigation {
-    @apply decoration-[0.1em] underline-offset-[0.1em] hover:underline;
+    @apply decoration-[0.1em] underline-offset-[0.1em] hover:underline text-offBlack hover:text-lightGray;
   }
 
   .portableText {
@@ -22,6 +22,7 @@
     ol ol {
       list-style-type: lower-alpha;
     }
+
     ol ol ol {
       list-style-type: lower-roman;
     }
@@ -29,12 +30,18 @@
     ul {
       list-style: disc outside;
     }
+
     ul ul {
       list-style: circle outside;
     }
     ul ul ul {
       list-style: square outside;
     }
+  }
+
+  :root {
+    --bg-blue: #4357AD;
+    --bg-offBlack: #0E0F19;
   }
 
   .select {
@@ -53,6 +60,69 @@
     transition: all 200ms ease-out;
   }
 
+  .bleed {
+    position: relative;
+    width: 108%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .angle:before {
+    content: "";
+    background: theme('colors.blue');
+    height: 40px;
+    transform: skewY(1deg);
+    position: absolute;
+    top: -22px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.angle:after {
+    content: "";
+    background: theme('colors.blue');
+    height: 80px;
+    transform: skewY(358deg);
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.two-col ul li {
+  line-height: 1.6;
+  margin-left: 1.5rem;
+}
+
+.pricing-block p {
+  padding-bottom: 1.5rem;
+}
+
+.pricing-block > .grid > div {
+  background: theme('colors.green');
+}
+
+.pricing-block > .grid > div ul li {
+  list-style: disc;
+  line-height: 1.6;
+  margin-left: 1.5rem;
+}
+
+.pricing-block > .grid > div h3 {
+  text-shadow: 1px 1px 2px theme('colors.offBlack')
+}
+
+.pricing-block > .grid > div h4 {
+  padding-top: 2rem;
+}
+
+.pricing-block > .grid > div h4 span {
+  display: block;
+  font-size: 1rem;
+}
+
   .select:disabled {
     color: theme('colors.darkGray');
   }
@@ -69,6 +139,11 @@
 html {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+p {
+  line-height: 1.6;
+
 }
 
 .embla__slide {
