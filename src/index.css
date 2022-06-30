@@ -69,7 +69,7 @@
 
   .angle:before {
     content: "";
-    background: var(--bg-blue);
+    background: theme('colors.blue');
     height: 40px;
     transform: skewY(1deg);
     position: absolute;
@@ -81,7 +81,7 @@
 
 .angle:after {
     content: "";
-    background: var(--bg-blue);
+    background: theme('colors.blue');
     height: 80px;
     transform: skewY(358deg);
     position: absolute;
@@ -89,6 +89,38 @@
     left: 0;
     right: 0;
     z-index: -1;
+}
+
+.two-col ul li {
+  line-height: 1.6;
+  margin-left: 1.5rem;
+}
+
+.pricing-block p {
+  padding-bottom: 1.5rem;
+}
+
+.pricing-block > .grid > div {
+  background: theme('colors.green');
+}
+
+.pricing-block > .grid > div ul li {
+  list-style: disc;
+  line-height: 1.6;
+  margin-left: 1.5rem;
+}
+
+.pricing-block > .grid > div h3 {
+  text-shadow: 1px 1px 2px theme('colors.offBlack')
+}
+
+.pricing-block > .grid > div h4 {
+  padding-top: 2rem;
+}
+
+.pricing-block > .grid > div h4 span {
+  display: block;
+  font-size: 1rem;
 }
 
   .select:disabled {
