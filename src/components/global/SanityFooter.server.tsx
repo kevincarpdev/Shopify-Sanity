@@ -5,17 +5,16 @@ export default function SanityFooter() {
     <div className="-my-overlap bg-[#121923] pt-overlap text-white">
       <div
         className={clsx(
-          'mx-auto max-w-[47rem] px-4 py-12 text-center text-xl leading-caption', //
+          'mx-auto max-w-[80rem] px-4 py-12 text-center text-xl leading-caption', //
           'md:px-8',
         )}
       >
         {/* Intro */}
         <div>
-          This demo shows how Sanity.io can power remarkable storefronts on
-          Shopify's Hydrogen framework.
+          Ready to kick your sales into overdrive? Give us a call today to get started. 
         </div>
         {/* Links */}
-        <div
+        {/* <div
           className={clsx(
             'mt-8 grid grid-cols-1 gap-3 text-left text-sm leading-caption',
             'md:grid-cols-3',
@@ -104,8 +103,9 @@ export default function SanityFooter() {
 
             <div>Install Sanity Connect for free on the Shopify App Store</div>
           </a>
-        </div>
+        </div> */}
         {/* Learn more */}
+        
         <a
           className={clsx(
             'mt-8 inline-flex items-center justify-center gap-1 text-lg text-[#508EEA]',
@@ -115,7 +115,7 @@ export default function SanityFooter() {
           rel="noreferrer"
           target="_blank"
         >
-          <span>Learn more</span>
+          <span>Request a Demo</span>
           <svg
             width="11"
             height="10"

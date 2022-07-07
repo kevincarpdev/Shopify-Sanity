@@ -135,6 +135,9 @@ export default function HomeHero({hero}: Props) {
 
               
             </div>
+            <div className="text-center py-12 flex justify-center">
+              {hero.link && <LinkButton link={hero.link} />}
+            </div>
       
       
      </div>
