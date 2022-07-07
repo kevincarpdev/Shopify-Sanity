@@ -101,8 +101,42 @@
 }
 
 .pricing-block > .grid > div {
-  background: theme('colors.green');
+  background:theme('colors.green');  
+  position: relative;
+  box-shadow: 6px 6px 6px -2px rgba(168,168,168,0.75);
+  -webkit-box-shadow: 6px 6px 6px -2px rgba(168,168,168,0.75);
+  -moz-box-shadow: 6px 6px 6px -2px rgba(168,168,168,0.75);
 }
+
+.pricing-block > .grid > div:last-of-type:after {
+  border-right: 10px solid transparent;
+} 
+
+.pricing-block > .grid > div:first-of-type:after {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid  theme('colors.green');
+  border-left: 10px solid transparent;
+  top: -20px;
+  bottom: auto;
+} 
+
+.pricing-block > .grid > div:first-of-type {
+  top: 10px;
+}
+
+
+
+.pricing-block > .grid > div:after{
+  left: 0px;
+  bottom: -20px;
+  border-top: 10px solid theme('colors.green');
+  border-bottom: 10px solid transparent;
+  content:""; 
+  display: block;
+  position: absolute;
+  width: 100%;
+} 
+
 
 .pricing-block > .grid > div ul li {
   list-style: disc;
