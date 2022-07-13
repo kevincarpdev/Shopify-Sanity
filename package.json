@@ -7,13 +7,9 @@
   "author": "Kevin Carpenter <carpenter.kevin@gmail.com>",
   "scripts": {
     "dev": "shopify hydrogen dev",
-    "build": "shopify hydrogen build --entry edge-entry.js && yarn prepare:output",
+    "build": "shopify hydrogen build",
     "preview": "shopify hydrogen preview",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-    "test": "WATCH=true vitest",
-    "test:ci": "yarn build --target node && vitest run",
-    "prepare:output": "rm -rf .vercel/output && cp -r output-template .vercel/output && cp -r dist/client/* .vercel/output/static && rm .vercel/output/static/index.html && cp dist/worker/index.js .vercel/output/functions/hydrogen.func/",
-    "deploy": "vercel deploy --prebuilt"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src"
   },
   "prettier": "@shopify/prettier-config",
   "devDependencies": {
@@ -33,7 +29,7 @@
     "prettier-plugin-tailwindcss": "^0.1.11",
     "tailwindcss": "^3.1.1",
     "typescript": "^4.7.2",
-    "vite": "3"
+    "vite": "^2.9.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",
@@ -41,16 +37,15 @@
     "@sanity/client": "^3.3.2",
     "@sanity/image-url": "^1.0.1",
     "@sanity/types": "^2.29.5",
-    "@shopify/hydrogen": "^1.0.0",
+    "@shopify/hydrogen": "~1.0.2",
     "@tippyjs/react": "^4.2.6",
     "body-parser": "^1.20.0",
     "clsx": "^1.1.1",
-    "embla-carousel-react": "^7.0.0-rc04",
+    "embla-carousel-react": "^6.2.0",
     "groq": "^2.29.3",
     "pluralize": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-social-media-embed": "^2.2.2",
-    "vitest": "^0.18.0"
+    "react-social-media-embed": "^2.2.2"
   }
 }
