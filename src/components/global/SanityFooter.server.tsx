@@ -11,8 +11,7 @@ export default function SanityFooter() {
       >
         {/* Intro */}
         <div>
-          This demo shows how Sanity.io can power remarkable storefronts on
-          Shopify's Hydrogen framework.
+          Testing Footer Area
         </div>
         {/* Links */}
         <div
@@ -42,7 +41,7 @@ export default function SanityFooter() {
                 fill="#D93D46"
               />
             </svg>
-            <div>Explore this demo on Github</div>
+            <div>Explore</div>
           </a>
 
           <a
@@ -77,7 +76,7 @@ export default function SanityFooter() {
               />
             </svg>
 
-            <div>Try our Sanity Studio for Shopify projects</div>
+            <div>Try</div>
           </a>
 
           <a
@@ -102,7 +101,7 @@ export default function SanityFooter() {
               />
             </svg>
 
-            <div>Install Sanity Connect for free on the Shopify App Store</div>
+            <div>Install</div>
           </a>
         </div>
         {/* Learn more */}
