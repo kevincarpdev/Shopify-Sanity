@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import type {SanityModuleInstagram} from '../../../types';
-import InstagramModule from '../../modules/Instagram.client';
 
 type Props = {
   node: SanityModuleInstagram;
@@ -14,7 +13,7 @@ export default function InstagramBlock({node}: Props) {
         'my-8',
       )}
     >
-      <InstagramModule module={node} />
+     
     </div>
   );
 }
