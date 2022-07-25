@@ -3,7 +3,7 @@ import CalloutModule from './Callout.server';
 import CallToActionModule from './CallToAction.server';
 import CollectionModule from './Collection.server';
 import ImageModule from './Image.server';
-import InstagramModule from './Instagram.client';
+//import InstagramModule from './Instagram.client';
 import ProductModule from './Product.server';
 
 type Props = {
@@ -26,8 +26,8 @@ export default function Module({
       return <CollectionModule module={module} />;
     case 'module.image':
       return <ImageModule module={module} />;
-    case 'module.instagram':
-      return <InstagramModule module={module} />;
+    // case 'module.instagram':
+    //   return <InstagramModule module={module} />;
     case 'module.product':
       return (
         <ProductModule
