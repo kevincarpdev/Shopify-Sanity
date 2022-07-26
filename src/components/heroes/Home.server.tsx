@@ -3,6 +3,11 @@ import type {SanityHeroHome} from '../../types';
 import LinkButton from '../elements/LinkButton';
 import CallToActionModule from '../modules/CallToAction.server';
 import HeroContent from './HeroContent.server';
+import Logo from '../public/logo.png';
+import Speed from '../public/speed.png';
+import Security from '../public/security.png';
+import Cart from '../public/cart.png';
+import Cloud from '../public/cloud.png';
 
 type Props = {
   hero: SanityHeroHome;
@@ -24,6 +29,7 @@ export default function HomeHero({hero}: Props) {
             'md:text-3xl',
           )}
         >
+          <img className="mx-auto py-12" alt="Matilda" src={Logo} />
           {hero.title}
         </h1>
       )}
@@ -32,26 +38,17 @@ export default function HomeHero({hero}: Props) {
       {hero.link && <LinkButton link={hero.link} />}
 
       {/* Hero content */}
-      {hero.content && (
-        <div
-          className={clsx(
-            'mt-6 w-full', //
-            'md:mt-12',
-          )}
-        >
-          <HeroContent content={hero.content} />
-        </div>
-      )}
+      
       {/* CTA Component */}
       <div className="bleed angle bg-blue mt-16 mb-16">
         <div className="cta-block pb-16 pt-16 max-w-[60rem] mx-auto">
-          <h1 className="text-center text-2xl font-bold text-lightGray pb-4 pt-4">Whats Sanity?</h1>
+          <h1 className="text-center text-2xl font-bold text-lightGray pb-4 pt-4">Whats Matilda?</h1>
           <p className="pl-12 pr-12 pb-4 text-lightGray text-center ">Nullam dictum efficitur leo non auctor. Etiam a mollis massa. Quisque congue vitae felis et viverra. Nam sed lacus in neque fermentum ullamcorper. Nulla facilisi. Fusce facilisis, odio non vulputate convallis, enim leo lobortis risus, sed venenatis arcu erat eget augue. Morbi tellus sem, dignissim non eleifend ut, fermentum et elit. Aliquam et ipsum ultrices dolor fringilla ornare nec in massa. Donec non enim quis dui mollis semper non faucibus arcu. Integer quis lobortis mauris, nec efficitur mi. Vestibulum et leo pharetra, maximus magna ut, egestas leo.</p>
           <p className="pl-12 pr-12 pb-4 text-lightGray text-center">Link to demo?</p>
         </div>
       </div>
 
-     {/* Two Col*/}
+     {/* Two Col
 
      <div className="w-full pb-16 pt-16 two-col max-w-[60rem] mx-auto">
         <div className="grid grid-cols-2 gap-2 text-left',
@@ -71,7 +68,33 @@ export default function HomeHero({hero}: Props) {
               </div>
 
             </div>
-        </div>
+        </div> */}
+
+    <div className="pb-16 pt-16 max-w-[75rem] mx-auto">
+      <h2 className="text-center text-2xl font-bold text-black pb-4 pt-4">What can Matilda do for you?</h2>
+      <div className="grid grid-cols-4 gap-4 text-left md:grid-cols-4 sm:grid-col-2">
+      <div className="p-8 text-callout">
+        <img src={Speed} alt="speed" />
+        <h3 className="text-xl font-bold text-black pb-4 pt-4">Blinding speed</h3>
+        <p>When you update your products or content, your whole site is recompiled into static pages. No more waiting for carts to load or process. Everything is done in a flash.</p>
+      </div>
+      <div className="p-8 text-callout">
+        <img src={Security} alt="Security" />
+        <h3 className="text-xl font-bold text-black pb-4 pt-4">Unmatched Security</h3>
+        <p>Using cutting edge frameworks packed with the latest in security patches and hosted on a managed server,  you can rest easy that your site will be there when you wake up.</p>
+      </div>
+      <div className="p-8 text-callout">
+        <img src={Cloud} alt="SEO" />
+        <h3 className="text-xl font-bold text-black pb-4 pt-4">Optimized</h3>
+        <p>SEO is a breeze with Matilda, our clients regularly see 90+ on their site scores. Google won't be able to keep their hands off of you. </p>
+      </div>
+      <div className="p-8 text-callout">
+        <img src={Cart} alt="Shopify" />
+        <h3 className="text-xl font-bold text-black pb-4 pt-4">Built for you</h3>
+        <p>Use your favorite front-end framework, use your favorite shopping cart. Matilda can handle it all. </p>
+      </div>
+      </div>
+      </div>
 
         <div className="pricing-block pb-16 pt-16 max-w-[75rem] mx-auto">
       <h2 className="text-center text-2xl font-bold text-black pb-4 pt-4">Choose the right solution for your business.</h2>

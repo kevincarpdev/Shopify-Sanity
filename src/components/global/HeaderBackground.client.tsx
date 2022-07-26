@@ -2,6 +2,7 @@ import {Link} from '@shopify/hydrogen';
 import LogoIcon from '../icons/Logo';
 import clsx from 'clsx';
 import {useEffect, useState} from 'react';
+import Hat from '/../public/name-logo.svg';
 
 export default function HeaderBackground() {
   const [scrolledDown, setScrolledDown] = useState(false);
@@ -32,10 +33,11 @@ export default function HeaderBackground() {
         <div
           className={clsx(
             'absolute bottom-0 top-0 left-1/2 flex w-[50px] -translate-x-1/2 items-center',
-            'lg:w-[65px]',
+            'lg:w-[165px]',
           )}
         >
-          <LogoIcon
+          <img src={Hat} />
+          {/* <LogoIcon
             className="h-auto w-full"
             classNameMark={clsx([
               'duration-700',
@@ -47,7 +49,7 @@ export default function HeaderBackground() {
                 ? 'opacity-0 translate-y-1'
                 : 'opacity-100 translate-y-0',
             ])}
-          />
+          /> */}
         </div>
       </Link>
     </div>
