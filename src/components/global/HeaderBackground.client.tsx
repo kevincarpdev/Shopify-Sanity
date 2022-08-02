@@ -2,7 +2,7 @@ import {Link} from '@shopify/hydrogen';
 import LogoIcon from '../icons/Logo';
 import clsx from 'clsx';
 import {useEffect, useState} from 'react';
-import Hat from '/../public/name-logo.svg';
+import Hat from '/name-logo.svg';
 
 export default function HeaderBackground() {
   const [scrolledDown, setScrolledDown] = useState(false);

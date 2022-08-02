@@ -3,11 +3,11 @@ import type {SanityHeroHome} from '../../types';
 import LinkButton from '../elements/LinkButton';
 import CallToActionModule from '../modules/CallToAction.server';
 import HeroContent from './HeroContent.server';
-import Logo from '../../public/logo.png';
-import Speed from '../public/speed.png';
-import Security from '../public/security.png';
-import Cart from '../public/cart.png';
-import Cloud from '../public/cloud.png';
+import Logo from '/logo.png';
+import Speed from '/speed.png';
+import Security from '/security.png';
+import Cart from '/cart.png';
+import Cloud from '/cloud.png';
 
 type Props = {
   hero: SanityHeroHome;
