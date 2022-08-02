@@ -3,7 +3,7 @@ import type {SanityHeroHome} from '../../types';
 import LinkButton from '../elements/LinkButton';
 import CallToActionModule from '../modules/CallToAction.server';
 import HeroContent from './HeroContent.server';
-import Logo from '../public/logo.png';
+import Logo from '../../public/logo.png';
 import Speed from '../public/speed.png';
 import Security from '../public/security.png';
 import Cart from '../public/cart.png';
