@@ -10,7 +10,7 @@ type Props = {
 export default function CalloutModule({colorTheme, module}: Props) {
   return (
     <div
-      className="mr-auto flex flex-col items-start"
+      className={module.class}
       style={{color: colorTheme?.text}}
     >
       {/* Text */}
