@@ -27,7 +27,7 @@ export default function Block({children, node}: Props) {
     <p
       className={clsx(
         'first:mt-0 last:mb-0', //
-        'relative my-4 leading-paragraph',
+        'relative my-4 leading-paragraph text-center',
       )}
     >
       {children}

@@ -42,7 +42,7 @@ export default function Header({menuLinks}: Props) {
             'lg:block',
           )}
         >
-          <CountrySelect />
+          {/* <CountrySelect /> */}
         </div>
         <div className="flex h-full items-center justify-center py-4 pr-4 pl-2">
           <CartToggle />

@@ -98,7 +98,7 @@ export default function HomeHero({hero}: Props) {
 
         <div className="pricing-block pb-16 pt-16 max-w-[75rem] mx-auto">
       <h2 className="text-center text-2xl font-bold text-black pb-4 pt-4">Choose the right solution for your business.</h2>
-      <p className="pl-12 pr-12 pb-4 text-black text-center ">Sanity comes in several different size solutions to give you the right amount of power for the right price.</p>
+      <p className="pl-12 pr-12 pb-4 text-black text-center ">Matilda comes in several different size solutions to give you the right amount of power for the right price.</p>
       <div className="grid grid-cols-3 gap-3 text-left',
             'md:grid-cols-1">
               <div className="p-8 text-lightGray">
