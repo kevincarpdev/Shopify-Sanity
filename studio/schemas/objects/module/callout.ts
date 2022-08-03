@@ -33,6 +33,7 @@ export default {
   ],
   preview: {
     select: {
+      class: 'class',
       text: 'text',
       url: 'url',
     },
