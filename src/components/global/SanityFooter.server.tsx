@@ -11,7 +11,7 @@ export default function SanityFooter() {
       >
         {/* Intro */}
         <div>
-          Ready to kick your sales into overdrive? Give us a call today to get started. 
+          Ready to kick your sales into overdrive? Contact us today to get started. 
         </div>
         {/* Links */}
         {/* <div

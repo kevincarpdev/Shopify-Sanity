@@ -145,7 +145,7 @@ export default function MobileNavigation({menuLinks}: Props) {
                 </div>
 
                 <div className="-ml-2">
-                  <CountrySelect align="left" />
+                  {/* <CountrySelect align="left" /> */}
                 </div>
               </div>
             </Dialog.Panel>
