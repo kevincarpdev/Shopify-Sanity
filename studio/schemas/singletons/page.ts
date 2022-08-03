@@ -1,6 +1,6 @@
 import {DocumentsIcon} from '@sanity/icons'
 
-const TITLE = 'Home'
+const TITLE = 'Page'
 
 export default {
   name: 'page',
