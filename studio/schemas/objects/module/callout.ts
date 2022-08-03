@@ -6,6 +6,11 @@ export default {
   type: 'object',
   icon: BulbOutlineIcon,
   fields: [
+    {
+      name: 'class',
+      title: 'Class',
+      type: 'string'
+    },
     // Text
     {
       name: 'text',
