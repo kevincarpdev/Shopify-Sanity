@@ -32,14 +32,14 @@ export default {
           },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Title
     {
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
       fieldset: 'copy',
     },
     // Body
@@ -56,7 +56,7 @@ export default {
       title: 'Link',
       type: 'array',
       of: [{type: 'linkInternal'}, {type: 'linkExternal'}],
-      validation: (Rule) => Rule.max(1),
+      validation: (Rule: { required: () => any; }) => Rule.max(1),
       fieldset: 'copy',
     },
     // Content
@@ -64,7 +64,7 @@ export default {
       name: 'content',
       title: 'Content',
       type: 'array',
-      validation: (Rule) => Rule.required().max(1),
+      validation: (Rule: { required: () => any; }) => Rule.required().max(1),
       of: [
         {
           icon: ImageIcon,
@@ -75,7 +75,7 @@ export default {
           name: 'productWithVariant',
           title: 'Product + Variant',
           type: 'productWithVariant',
-          validation: (Rule) => Rule.required(),
+          validation: (Rule: { required: () => any; }) => Rule.required(),
         },
       ],
     },

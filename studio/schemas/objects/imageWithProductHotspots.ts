@@ -12,7 +12,7 @@ export default {
       title: 'Image',
       options: {hotspot: true},
       type: 'image',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     {
       name: 'showHotspots',

@@ -12,7 +12,7 @@ export default {
       name: 'productWithVariant',
       title: 'Product + Variant',
       type: 'productWithVariant',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
   ],
   preview: {

@@ -78,7 +78,7 @@ export default {
         accept: 'image/svg+xml',
       },
       group: 'theme',
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.custom((image) => {
           if (!image) {
             return true

@@ -32,7 +32,7 @@ export default {
       name: 'reference',
       type: 'reference',
       weak: true,
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
       to: PAGE_REFERENCES,
     },
   ],

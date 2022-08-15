@@ -15,7 +15,7 @@ export default {
       name: 'content',
       title: 'Content',
       type: 'array',
-      validation: (Rule) => Rule.max(1),
+      validation: (Rule: { required: () => any; }) => Rule.max(1),
       of: [
         {
           name: 'productWithVariant',

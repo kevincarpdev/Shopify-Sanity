@@ -47,7 +47,7 @@ export default {
         layout: 'dropdown',
         list: ['active', 'archived', 'draft'],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Deleted
     {

@@ -54,13 +54,13 @@ export default {
                   name: 'title',
                   title: 'Title',
                   type: 'string',
-                  validation: (Rule) => Rule.required(),
+                  validation: (Rule: { required: () => any; }) => Rule.required(),
                 },
                 {
                   name: 'collectionLinks',
                   title: 'Collection links',
                   type: 'array',
-                  validation: (Rule) => Rule.unique().max(4),
+                  validation: (Rule: { required: () => any; }) => Rule.unique().max(4),
                   of: [
                     {
                       name: 'collection',
@@ -159,7 +159,7 @@ export default {
           type: 'customProductOption.size',
         },
       ],
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.custom((options) => {
           // Each product option type must have a unique title
           const uniqueTitles = new Set(options.map((option) => option.title))
@@ -180,7 +180,7 @@ export default {
           name: 'title',
           title: 'Title',
           type: 'string',
-          validation: (Rule) => Rule.required(),
+          validation: (Rule: { required: () => any; }) => Rule.required(),
         },
         {
           name: 'body',
@@ -226,18 +226,18 @@ export default {
           name: 'title',
           title: 'Site title',
           type: 'string',
-          validation: (Rule) => Rule.required(),
+          validation: (Rule: { required: () => any; }) => Rule.required(),
         },
         {
           name: 'description',
           title: 'Description',
           type: 'text',
           rows: 2,
-          validation: (Rule) =>
+          validation: (Rule: { required: () => any; }) =>
             Rule.max(150).warning('Longer descriptions may be truncated by search engines'),
         },
       ],
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
   ],
   preview: {

@@ -10,7 +10,7 @@ export default {
       name: 'url',
       title: 'URL',
       type: 'string',
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.custom((url) => {
           const pattern = /(https?:\/\/(?:www\.)?instagram\.com\/p\/([^/?#&]+)).*/g
           const isValid = url?.match(pattern)

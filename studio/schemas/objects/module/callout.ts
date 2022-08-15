@@ -17,7 +17,7 @@ export default {
       title: 'Text',
       type: 'text',
       rows: 2,
-      validation: (Rule) => [
+      validation: (Rule: { required: () => any; }) => [
         Rule.required(),
         Rule.max(70).warning(`Callout length shouldn't be more than 70 characters.`),
       ],
@@ -28,7 +28,7 @@ export default {
       title: 'Link',
       type: 'array',
       of: [{type: 'linkInternal'}, {type: 'linkExternal'}],
-      validation: (Rule) => Rule.max(1),
+      validation: (Rule: { required: () => any; }) => Rule.max(1),
     },
   ],
   preview: {

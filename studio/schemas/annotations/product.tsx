@@ -31,7 +31,7 @@ export default {
       name: 'productWithVariant',
       title: 'Product + Variant',
       type: 'productWithVariant',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Link action
     {
@@ -56,7 +56,7 @@ export default {
           },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Quantity
     {
@@ -65,7 +65,7 @@ export default {
       type: 'number',
       initialValue: 1,
       hidden: ({parent}) => parent.linkAction === 'link',
-      validation: (Rule) => Rule.required().min(1).max(10),
+      validation: (Rule: { required: () => any; }) => Rule.required().min(1).max(10),
     },
   ],
 }

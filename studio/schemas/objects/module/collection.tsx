@@ -15,7 +15,7 @@ export default {
       type: 'reference',
       weak: true,
       to: [{type: 'collection'}],
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Show background
     {

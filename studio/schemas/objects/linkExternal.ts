@@ -11,14 +11,14 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // URL
     {
       name: 'url',
       title: 'URL',
       type: 'url',
-      validation: (Rule) => Rule.required().uri({scheme: ['http', 'https']}),
+      validation: (Rule: { required: () => any; }) => Rule.required().uri({scheme: ['http', 'https']}),
     },
     // Open in a new window
     {

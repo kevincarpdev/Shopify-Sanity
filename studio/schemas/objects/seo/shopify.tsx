@@ -22,7 +22,7 @@ export default {
       options: {
         field: 'store.title',
       },
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.max(50).warning('Longer titles may be truncated by search engines'),
     },
     {
@@ -30,7 +30,7 @@ export default {
       title: 'Description',
       type: 'text',
       rows: 2,
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.max(150).warning('Longer descriptions may be truncated by search engines'),
     },
     {

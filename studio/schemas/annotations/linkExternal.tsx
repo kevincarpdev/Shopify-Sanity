@@ -30,7 +30,7 @@ export default {
       name: 'url',
       title: 'URL',
       type: 'url',
-      validation: (Rule) => Rule.required().uri({scheme: ['http', 'https']}),
+      validation: (Rule: { required: () => any; }) => Rule.required().uri({scheme: ['http', 'https']}),
     },
     // Open in a new window
     {

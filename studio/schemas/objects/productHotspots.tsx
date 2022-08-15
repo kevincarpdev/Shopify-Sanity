@@ -24,7 +24,7 @@ export default {
           readOnly: true,
           fieldset: 'position',
           initialValue: 50,
-          validation: (Rule) => Rule.required().min(0).max(100),
+          validation: (Rule: { required: () => any; }) => Rule.required().min(0).max(100),
         },
         {
           name: 'y',
@@ -32,7 +32,7 @@ export default {
           readOnly: true,
           fieldset: 'position',
           initialValue: 50,
-          validation: (Rule) => Rule.required().min(0).max(100),
+          validation: (Rule: { required: () => any; }) => Rule.required().min(0).max(100),
         },
       ],
       preview: {

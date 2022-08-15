@@ -24,7 +24,7 @@ export default {
               name: 'title',
               title: 'Title',
               type: 'string',
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
             // Image
             {
@@ -32,7 +32,7 @@ export default {
               title: 'Image',
               type: 'image',
               options: {hotspot: true},
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
             // Body
             {
@@ -82,7 +82,7 @@ export default {
                   type: 'block',
                 },
               ],
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
           ],
           preview: {

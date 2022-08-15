@@ -13,7 +13,7 @@ export default {
       title: 'Images',
       type: 'array',
       of: [{type: 'module.image'}],
-      validation: (Rule) => Rule.required().max(2),
+      validation: (Rule: { required: () => any; }) => Rule.required().max(2),
     },
     // Full width
     {
@@ -49,7 +49,7 @@ export default {
         ],
       },
       hidden: ({parent}) => !parent?.modules || parent?.modules.length < 2,
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
   ],
   preview: {

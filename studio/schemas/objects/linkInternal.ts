@@ -13,14 +13,14 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Reference
     {
       name: 'reference',
       type: 'reference',
       weak: true,
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
       to: PAGE_REFERENCES,
     },
   ],

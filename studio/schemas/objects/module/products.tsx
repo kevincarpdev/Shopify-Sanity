@@ -13,7 +13,7 @@ export default {
       title: 'Products',
       type: 'array',
       of: [{type: 'module.product'}],
-      validation: (Rule) => Rule.required().max(2),
+      validation: (Rule: { required: () => any; }) => Rule.required().max(2),
     },
     // Layout
     {
@@ -35,7 +35,7 @@ export default {
           },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
   ],
   preview: {

@@ -24,7 +24,7 @@ export default {
               name: 'title',
               title: 'Title',
               type: 'string',
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
             {
               name: 'body',
@@ -68,7 +68,7 @@ export default {
                   type: 'block',
                 },
               ],
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
           ],
           preview: {

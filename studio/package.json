@@ -30,6 +30,7 @@
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
+    "react-icons": "^4.4.0",
     "sanity-plugin-dashboard-widget-shopify": "^0.1.8",
     "sanity-plugin-hotspot-array": "^0.0.8",
     "sanity-plugin-media": "^1.4.10",

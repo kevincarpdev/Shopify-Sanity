@@ -47,7 +47,7 @@ export default {
         const productSelected = parent?.product
         return !productSelected
       },
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.custom(async (value, {parent}) => {
           // Selected product in adjacent `product` field
           const productId = parent?.product?._ref

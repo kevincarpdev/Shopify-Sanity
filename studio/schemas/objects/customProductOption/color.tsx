@@ -27,7 +27,7 @@ export default {
       title: 'Title',
       type: 'string',
       description: 'Shopify product option name (case sensitive)',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Colors
     {
@@ -45,14 +45,14 @@ export default {
               title: 'Title',
               type: 'string',
               description: 'Shopify product option value (case sensitive)',
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
             {
               name: 'color',
               title: 'Color',
               type: 'color',
               options: {disableAlpha: true},
-              validation: (Rule) => Rule.required(),
+              validation: (Rule: { required: () => any; }) => Rule.required(),
             },
           ],
           preview: {
@@ -71,7 +71,7 @@ export default {
           },
         },
       ],
-      validation: (Rule) =>
+      validation: (Rule: { required: () => any; }) =>
         Rule.custom((options) => {
           // Each size must have a unique title
           const uniqueTitles = new Set(options.map((option) => option.title))

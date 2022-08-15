@@ -20,7 +20,7 @@ export default {
       title: 'Image',
       type: 'image',
       options: {hotspot: true},
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Variant
     {
@@ -60,7 +60,7 @@ export default {
           title: 'Link',
           type: 'array',
           of: [{type: 'linkInternal'}, {type: 'linkExternal'}],
-          validation: (Rule) => Rule.max(1),
+          validation: (Rule: { required: () => any; }) => Rule.max(1),
         },
       ],
       hidden: ({parent}) => parent.variant !== 'callToAction',

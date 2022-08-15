@@ -19,7 +19,7 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Text color
     {
@@ -27,7 +27,7 @@ export default {
       title: 'Text',
       type: 'color',
       options: {disableAlpha: true},
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     // Background color
     {
@@ -35,7 +35,7 @@ export default {
       title: 'Background',
       type: 'color',
       options: {disableAlpha: true},
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: { required: () => any; }) => Rule.required(),
     },
   ],
   preview: {

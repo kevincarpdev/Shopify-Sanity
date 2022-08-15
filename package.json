@@ -45,6 +45,7 @@
     "groq": "^2.29.3",
     "pluralize": "^8.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-step-builder": "^3.0.6"
   }
 }
