@@ -172,6 +172,7 @@ export type SanityModuleCallout = {
   _type: 'module.callout';
   link: SanityLink;
   text: string;
+  klass: string;
 };
 
 export type SanityModuleCallToAction = {

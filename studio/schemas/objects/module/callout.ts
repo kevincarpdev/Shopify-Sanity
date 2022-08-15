@@ -7,7 +7,7 @@ export default {
   icon: BulbOutlineIcon,
   fields: [
     {
-      name: 'class',
+      name: 'klass',
       title: 'Class',
       type: 'string'
     },
@@ -33,7 +33,6 @@ export default {
   ],
   preview: {
     select: {
-      class: 'class',
       text: 'text',
       url: 'url',
     },

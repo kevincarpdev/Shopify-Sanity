@@ -10,7 +10,7 @@ type Props = {
 export default function CalloutModule({colorTheme, module}: Props) {
   return (
     <div
-      className={module.class}
+      className={module.klass}
       style={{color: colorTheme?.text}}
     >
       {/* Text */}
