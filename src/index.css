@@ -166,20 +166,6 @@
   }
 }
 
-* {
-  font-variant-ligatures: none;
-}
-
-html {
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-p {
-  line-height: 1.6;
-
-}
-
 .embla__slide {
   position: relative;
   flex: 0 0 100%;
@@ -225,13 +211,4 @@ p {
 .steps_data {
   display: flex;
   justify-content: space-evenly;
-}
-
-ul {
-  text-align: left;
-}
-
-button {
-  padding: 5px 15px;
-  margin: 2px;
 }
