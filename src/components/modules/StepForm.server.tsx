@@ -7,7 +7,6 @@ type Props = {
 };
 
 export default function StepFormModule({ colorTheme, module }: Props) {
-  console.log("StepFormModule", module);
   return (
     <div
       style={{ color: colorTheme?.text }}
@@ -20,17 +19,15 @@ export default function StepFormModule({ colorTheme, module }: Props) {
         )}
       >
         {module.title}
+        
       </div>
+      {module.body}
 
-      {/* Fields */}
-      {/* {module.formFields && (
-        {module.formFields.map(field => (
-          <div className="mt-4">
-            <div className="text-xl">{field.label}</div>
-            <div className="mt-2">{field.value}</div>
-          </div>
-        ))}
-      )} */}
+      {module?.groups?.map((group) => (
+        <div key={group._key}>
+          <div className="text-xl">{group.title}</div>
+        </div>
+      ))}
     </div>
   );
 }
