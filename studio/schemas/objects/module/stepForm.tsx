@@ -35,7 +35,7 @@ export default {
     // Form Fields Groups
     {
       name: 'groups',
-      title: 'Groups',
+      title: 'Form Fields',
       type: 'array',
       of: [
         {
