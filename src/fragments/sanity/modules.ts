@@ -6,10 +6,14 @@ import {MODULE_COLLECTION} from './modules/collection';
 import {MODULE_IMAGE} from './modules/image';
 import {MODULE_INSTAGRAM} from './modules/instagram';
 import {MODULE_PRODUCT} from './modules/product';
+import {MODULE_STEP_FORM } from './modules/stepForm';
 
 export const MODULES = groq`
   _key,
   _type,
+  (_type == "module.stepForm") => {
+    ${MODULE_STEP_FORM}
+  },
   (_type == "module.accordion") => {
     ${MODULE_ACCORDION}
   },
@@ -30,5 +34,5 @@ export const MODULES = groq`
   },      
   (_type == "module.product") => {
     ${MODULE_PRODUCT}
-  },      
+  }
 `;

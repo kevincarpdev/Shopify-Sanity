@@ -49,7 +49,7 @@ export default {
     prepare(selection) {
       const { title } = selection
       return {
-        subtitle: 'Call to action',
+        subtitle: 'Multi-step form',
         title,
       }
     },

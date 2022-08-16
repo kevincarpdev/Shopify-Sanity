@@ -84,5 +84,9 @@ export default {
       name: 'blockProducts',
       type: 'module.products',
     },
+    {
+      name: 'blockStepForm',
+      type: 'module.stepForm',
+    },
   ],
 }

@@ -154,7 +154,8 @@ export type SanityModule =
   | SanityModuleGrid
   | SanityModuleImage
   | SanityModuleInstagram
-  | SanityModuleProduct;
+  | SanityModuleProduct
+  | SanityModuleStepForm
 
 export type SanityModuleAccordion = {
   _key?: string;
@@ -317,4 +318,21 @@ export type SanitySeo = {
   description?: string;
   image?: SanityAssetImage;
   title: string;
+};
+
+
+export type SanityFormField = {
+  _key: string;
+  _type: 'formField';
+  fieldType: string;
+  title: string;
+  placeholderText: string;
+};
+
+export type SanityModuleStepForm = {
+  _key?: string;
+  _type: 'module.stepForm';
+  title: string;
+  body?: string;
+  formFields: SanityFormField[];
 };

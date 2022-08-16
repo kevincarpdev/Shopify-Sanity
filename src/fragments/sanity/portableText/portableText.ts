@@ -5,10 +5,14 @@ import {MODULE_GRID} from '../modules/grid';
 import {MODULE_IMAGES} from '../modules/images';
 import {MODULE_INSTAGRAM} from '../modules/instagram';
 import {MODULE_PRODUCTS} from '../modules/products';
+import {MODULE_STEP_FORM} from '../modules/stepForm';
 import {MARK_DEFS} from './markDefs';
 
 export const PORTABLE_TEXT = groq`
   ...,
+  (_type == 'blockStepForm') => {
+    ${MODULE_STEP_FORM},
+  },
   (_type == 'blockAccordion') => {
     ${MODULE_ACCORDION},
   },

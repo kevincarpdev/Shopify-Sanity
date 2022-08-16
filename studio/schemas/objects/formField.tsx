@@ -38,7 +38,7 @@ export default {
      // Placeholder
     {
       title: 'Placeholder Text',
-      name: 'placeholder',
+      name: 'placeholderText',
       type: 'string',
       options: { source: 'title' },
     }
