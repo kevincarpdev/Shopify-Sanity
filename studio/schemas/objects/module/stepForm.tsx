@@ -95,14 +95,6 @@ export default {
           },
         },
       ],
-    },
-    {
-      name: 'formFields',
-      title: 'Form Fields',
-      type: 'array',
-      of: [{ type: 'formField' }],
-      validation: (Rule) => Rule.required(),
-      fieldset: 'fields',
     }
   ],
   preview: {

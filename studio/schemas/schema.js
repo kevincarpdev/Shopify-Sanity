@@ -34,6 +34,7 @@ import heroCollection from './objects/hero/collection'
 import heroHome from './objects/hero/home'
 import heroPage from './objects/hero/page'
 import moduleAccordion from './objects/module/accordion'
+import moduleStepForm from './objects/module/stepForm'
 import moduleCallout from './objects/module/callout'
 import moduleCallToAction from './objects/module/callToAction'
 import moduleCollection from './objects/module/collection'
@@ -89,6 +90,7 @@ export default createSchema({
     linkExternal,
     linkInternal,
     moduleAccordion,
+    moduleStepForm,
     moduleCallout,
     moduleCallToAction,
     moduleCollection,

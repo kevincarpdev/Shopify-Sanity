@@ -11,6 +11,7 @@ import ProductCard from '../product/Card.server';
 const FULL_WIDTH_MODULE_TYPES: SanityModule['_type'][] = [
   'module.callout',
   'module.callToAction',
+  'module.stepForm',
 ];
 
 // Tailwind class map

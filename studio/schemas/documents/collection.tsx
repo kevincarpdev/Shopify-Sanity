@@ -118,6 +118,7 @@ export default {
         {type: 'module.callToAction'},
         {type: 'module.image'},
         {type: 'module.instagram'},
+        {type: 'module.stepForm'},
       ],
       group: 'editorial',
     },
