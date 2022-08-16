@@ -41,7 +41,6 @@ export default function StepFormModule({ colorTheme, module }: Props) {
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
-        'x-access-key': '9f2c312d-8b14-4513-8699-2cd6579319c7',
         "Content-Type": "application/json",
         Accept: "application/json",
       },
@@ -100,7 +99,7 @@ export default function StepFormModule({ colorTheme, module }: Props) {
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               type="hidden"
-              value="YOUR_ACCESS_KEY_HERE"
+              value="9f2c312d-8b14-4513-8699-2cd6579319c7"
               {...register("access_key")}
             />
             <input
