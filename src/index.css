@@ -184,3 +184,54 @@ p {
   position: relative;
   flex: 0 0 100%;
 }
+.steps_wrapper {
+  width: 400px;
+  margin: 50px auto;
+  background: #f1f1f2;
+  padding: 20px;
+}
+
+.step {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.steps_wrapper h1 {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form label {
+  font-size: 13px;
+  padding-top: 15px;
+  margin-bottom: 4px;
+}
+
+.form input {
+  padding: 5px;
+}
+
+.steps_data {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  text-align: left;
+}
+
+button {
+  padding: 5px 15px;
+  margin: 2px;
+}

@@ -5,7 +5,7 @@ import CollectionModule from './Collection.server';
 import ImageModule from './Image.server';
 //import InstagramModule from './Instagram.client';
 import ProductModule from './Product.server';
-import StepFormModule from './StepForm.server';
+import StepFormModule from './StepForm.client';
 
 type Props = {
   colorTheme?: SanityColorTheme;
