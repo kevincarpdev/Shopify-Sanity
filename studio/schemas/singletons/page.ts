@@ -38,6 +38,7 @@ export default {
         {type: 'module.image'},
         {type: 'module.instagram'},
         {type: 'module.product'},
+        {type: 'module.stepForm'},
       ],
       group: 'editorial',
     },

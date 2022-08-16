@@ -32,7 +32,70 @@ export default {
       rows: 2,
       fieldset: 'content',
     },
-    // Form Fields
+    // Form Fields Groups
+    {
+      name: 'groups',
+      title: 'Groups',
+      type: 'array',
+      of: [
+        {
+          name: 'group',
+          title: 'Group',
+          type: 'object',
+          icon: false,
+          fields: [
+            // Field Type: text, dropdown, 
+            {
+              name: 'fieldType',
+              title: 'Field Type',
+              type: 'string',
+              initialValue: 'text',
+              options: {
+                direction: 'horizontal',
+                layout: 'radio',
+                list: [
+                  {
+                    title: 'Text',
+                    value: 'text',
+                  },
+                  {
+                    title: 'Select Dropdown',
+                    value: 'dropdown',
+                  },
+                ],
+              },
+              validation: (Rule) => Rule.required(),
+            },
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              validation: (Rule: { required: () => any; }) => Rule.required(),
+            },
+            // Placeholder
+            {
+              title: 'Placeholder Text',
+              name: 'placeholderText',
+              type: 'string',
+              options: { source: 'title' },
+            }
+          ],
+          preview: {
+            select: {
+              fieldType: 'fieldType',
+              title: 'title',
+            },
+            prepare(selection) {
+              const { fieldType, title } = selection
+              return {
+                subtitle: fieldType,
+                title,
+              }
+            },
+          },
+        },
+      ],
+    },
     {
       name: 'formFields',
       title: 'Form Fields',

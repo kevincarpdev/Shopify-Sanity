@@ -10,9 +10,6 @@ import {MARK_DEFS} from './markDefs';
 
 export const PORTABLE_TEXT = groq`
   ...,
-  (_type == 'blockStepForm') => {
-    ${MODULE_STEP_FORM},
-  },
   (_type == 'blockAccordion') => {
     ${MODULE_ACCORDION},
   },
@@ -30,6 +27,9 @@ export const PORTABLE_TEXT = groq`
   },
   (_type == 'blockProducts') => {
     ${MODULE_PRODUCTS}
+  },
+  (_type == 'blockStepForm') => {
+    ${MODULE_STEP_FORM},
   },
   markDefs[] {
     ${MARK_DEFS}

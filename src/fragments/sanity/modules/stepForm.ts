@@ -4,14 +4,14 @@ import { FORM_FIELD } from '../formField';
 
 export const MODULE_STEP_FORM = groq`
   _key,
+  title,
   body[] {
     ...,
     markDefs[] {
       ${MARK_DEFS}
     }
   },
-  title,
-  formFields[] {
-    ${FORM_FIELD}
+  groups[] {
+   ${FORM_FIELD}
   }
 `;

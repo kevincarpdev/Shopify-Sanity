@@ -87,6 +87,6 @@ export default {
     {
       name: 'blockStepForm',
       type: 'module.stepForm',
-    },
+    }
   ],
 }

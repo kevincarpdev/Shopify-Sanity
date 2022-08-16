@@ -5,6 +5,7 @@ import CollectionModule from './Collection.server';
 import ImageModule from './Image.server';
 //import InstagramModule from './Instagram.client';
 import ProductModule from './Product.server';
+import StepFormModule from './StepForm.server';
 
 type Props = {
   colorTheme?: SanityColorTheme;
@@ -35,6 +36,8 @@ export default function Module({
           module={module}
         />
       );
+    case 'module.stepForm':
+      return <StepFormModule colorTheme={colorTheme} module={module} />;
     default:
       return null;
   }

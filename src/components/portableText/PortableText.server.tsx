@@ -14,6 +14,7 @@ import ImagesBlock from './blocks/Images.server';
 import InstagramBlock from './blocks/Instagram.server';
 import ListBlock from './blocks/List';
 import ProductsBlock from './blocks/Products.server';
+import StepFormBlock from './blocks/StepForm.client';
 
 type Props = {
   blocks: SanityBlock[];
@@ -62,6 +63,7 @@ export default function PortableText({
           ),
           blockInstagram: InstagramBlock,
           blockProducts: ProductsBlock,
+          blockStepForm: StepFormBlock,
         },
       }}
     />

@@ -320,19 +320,16 @@ export type SanitySeo = {
   title: string;
 };
 
-
-export type SanityFormField = {
-  _key: string;
-  _type: 'formField';
-  fieldType: string;
-  title: string;
-  placeholderText: string;
-};
-
 export type SanityModuleStepForm = {
   _key?: string;
   _type: 'module.stepForm';
   title: string;
   body?: string;
-  formFields: SanityFormField[];
+  groups: {
+    _key: string;
+    _type: 'group';
+    body: Block[];
+    title: string;
+    placeholderText: string;
+  }[];
 };
