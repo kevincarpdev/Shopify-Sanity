@@ -21,6 +21,7 @@ export default function StepFormModule({ colorTheme, module }: Props) {
         {module.title}
         
       </div>
+      
       {module.body}
 
       {module?.groups?.map((group) => (

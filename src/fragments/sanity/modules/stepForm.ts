@@ -5,12 +5,7 @@ import { FORM_FIELD } from '../formField';
 export const MODULE_STEP_FORM = groq`
   _key,
   title,
-  body[] {
-    ...,
-    markDefs[] {
-      ${MARK_DEFS}
-    }
-  },
+  body,
   groups[] {
    ${FORM_FIELD}
   }
