@@ -169,10 +169,12 @@ export type SanityModuleAccordion = {
 };
 
 export type SanityModuleCallout = {
+  body: ReactNode;
   _key?: string;
   _type: 'module.callout';
   link: SanityLink;
   text: string;
+  title: string;
   klass: string;
 };
 
