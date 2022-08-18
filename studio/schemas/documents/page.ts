@@ -68,6 +68,22 @@ export default {
       type: 'body',
       group: 'editorial',
     },
+    // Modules
+    {
+      name: 'modules',
+      title: 'Modules',
+      type: 'array',
+      of: [
+        {type: 'module.callout'},
+        {type: 'module.callToAction'},
+        {type: 'module.collection'},
+        {type: 'module.image'},
+        {type: 'module.instagram'},
+        {type: 'module.product'},
+        {type: 'module.stepForm'},
+      ],
+      group: 'editorial',
+    },
     // SEO
     {
       name: 'seo',
