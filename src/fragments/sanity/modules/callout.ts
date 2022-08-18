@@ -11,6 +11,7 @@ export const MODULE_CALLOUT = groq`
       ${LINK_INTERNAL}
     },
   },
+  title,
 	text,
   klass
 `;

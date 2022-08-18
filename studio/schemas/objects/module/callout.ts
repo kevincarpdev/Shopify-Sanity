@@ -7,6 +7,11 @@ export default {
   icon: BulbOutlineIcon,
   fields: [
     {
+      name: 'title',
+      title: 'Title',
+      type: 'string'
+    },
+    {
       name: 'klass',
       title: 'Class',
       type: 'string'
@@ -14,12 +19,11 @@ export default {
     // Text
     {
       name: 'text',
-      title: 'Text',
+      title: 'Body',
       type: 'text',
-      rows: 2,
+      rows: 10,
       validation: (Rule: { required: () => any; }) => [
-        Rule.required(),
-        Rule.max(70).warning(`Callout length shouldn't be more than 70 characters.`),
+        Rule.required()
       ],
     },
     // Link
@@ -37,10 +41,10 @@ export default {
       url: 'url',
     },
     prepare(selection) {
-      const {text, url} = selection
+      const {title, url} = selection
       return {
-        subtitle: 'Callout',
-        title: text,
+        title: title,
+        subtitle: 'Callout'
       }
     },
   },

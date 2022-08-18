@@ -44,9 +44,9 @@ export default function Header({menuLinks}: Props) {
         >
           {/* <CountrySelect /> */}
         </div>
-        <div className="flex h-full items-center justify-center py-4 pr-4 pl-2">
+        {/* <div className="flex h-full items-center justify-center py-4 pr-4 pl-2">
           <CartToggle />
-        </div>
+        </div> */}
       </div>
     </header>
   );
