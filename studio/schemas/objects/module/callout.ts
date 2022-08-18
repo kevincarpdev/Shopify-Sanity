@@ -37,7 +37,7 @@ export default {
   ],
   preview: {
     select: {
-      text: 'text',
+      title: 'title',
       url: 'url',
     },
     prepare(selection) {
