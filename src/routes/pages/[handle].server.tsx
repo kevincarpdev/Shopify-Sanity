@@ -6,6 +6,7 @@ import Layout from '../../components/global/Layout.server';
 import NotFound from '../../components/global/NotFound.server';
 import PortableText from '../../components/portableText/PortableText.server';
 import {PAGE} from '../../fragments/sanity/pages/page';
+import ModuleGrid from '../../components/modules/ModuleGrid.server';
 import useSanityQuery from '../../hooks/useSanityQuery';
 import type {SanityPage} from '../../types';
 import ReactGA from "react-ga4";
@@ -59,6 +60,16 @@ export default function PageRoute({params}: HydrogenRouteProps) {
         }}
         type="page"
       />
+       {sanityPage?.modules && (
+        <div
+          className={clsx(
+            'mb-32 mt-24 px-4', //
+            'md:px-8',
+          )}
+        >
+          <ModuleGrid items={sanityPage.modules} />
+        </div>
+      )}
     </Layout>
   );
 }
