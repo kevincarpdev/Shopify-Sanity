@@ -1,11 +1,9 @@
 import {
   FileRoutes,
-  LocalizationProvider,
   PerformanceMetrics,
   PerformanceMetricsDebug,
   Route,
   Router,
-  ShopifyAnalytics,
   ShopifyProvider,
   useSession,
 } from '@shopify/hydrogen';
@@ -23,7 +21,6 @@ function App() {
   return (
     <Suspense fallback={<LoadingFallback />}>
       <ShopifyProvider>
-        <LocalizationProvider countryCode={session?.countryCode}>
           <ServerCartProvider>
             <DefaultSeo />
             <Router>
@@ -35,7 +32,6 @@ function App() {
           <PerformanceMetrics />
           {import.meta.env.DEV && <PerformanceMetricsDebug />}
           {/* <ShopifyAnalytics /> */}
-        </LocalizationProvider>
       </ShopifyProvider>
     </Suspense>
   );
