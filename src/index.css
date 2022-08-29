@@ -76,7 +76,7 @@
     height: 40px;
     transform: skewY(1deg);
     position: absolute;
-    top: -22px;
+    top: -5%;
     left: 0;
     right: 0;
     z-index: -1;
@@ -88,7 +88,7 @@
     height: 80px;
     transform: skewY(358deg);
     position: absolute;
-    bottom: -26px;
+    bottom: -7%;
     left: 0;
     right: 0;
     z-index: -1;
