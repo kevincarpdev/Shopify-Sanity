@@ -12,6 +12,7 @@ import NotFound from '../components/global/NotFound.server';
 import {HOME_PAGE} from '../fragments/sanity/pages/home';
 import useSanityQuery from '../hooks/useSanityQuery';
 import type {SanityHomePage} from '../types';
+import ReactGA from "react-ga4";
 
 export default function IndexRoute() {
   const {data: sanityHome} = useSanityQuery<SanityHomePage>({
@@ -28,6 +29,10 @@ export default function IndexRoute() {
     // @ts-expect-error <NotFound> doesn't require response
     return <NotFound />;
   }
+
+  // Google Analytics
+  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.send({ hitType: "pageview" });
 
   return (
     <Layout>

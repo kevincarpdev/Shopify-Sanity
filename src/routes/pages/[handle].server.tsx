@@ -8,6 +8,7 @@ import PortableText from '../../components/portableText/PortableText.server';
 import {PAGE} from '../../fragments/sanity/pages/page';
 import useSanityQuery from '../../hooks/useSanityQuery';
 import type {SanityPage} from '../../types';
+import ReactGA from "react-ga4";
 
 // This demo doesn't use Shopify Online Store pages.
 // For this reason we don't use Shopify Analytics here.
@@ -24,6 +25,10 @@ export default function PageRoute({params}: HydrogenRouteProps) {
   }
 
   const sanitySeo = sanityPage.seo;
+
+  // Google Analytics
+  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.send({ hitType: "pageview", page: handle });
 
   return (
     <Layout>

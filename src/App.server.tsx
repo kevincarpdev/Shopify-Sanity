@@ -15,7 +15,7 @@ import ServerCartProvider from './components/cart/ServerCartProvider.server';
 import DefaultSeo from './components/DefaultSeo.server';
 import LoadingFallback from './components/global/LoadingFallback';
 import NotFound from './components/global/NotFound.server';
-import { StepsProvider } from "react-step-builder";
+// import { StepsProvider } from "react-step-builder";
 
 function App() {
   const session = useSession();

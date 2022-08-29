@@ -20,6 +20,7 @@ import {PRODUCT_FIELDS} from '../../fragments/shopify/product';
 import {PRODUCT_VARIANT_FIELDS} from '../../fragments/shopify/productVariant';
 import useSanityQuery from '../../hooks/useSanityQuery';
 import type {ProductWithNodes, SanityProductPage} from '../../types';
+import ReactGA from "react-ga4";
 
 type ShopifyPayload = {
   product: Pick<
@@ -85,6 +86,10 @@ export default function ProductRoute() {
   const sanitySeo = sanityProduct.seo;
 
   const initialVariant = storefrontProduct.variants.nodes[0];
+
+  // Google Analytics
+  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.send({ hitType: "pageview", page: handle });
 
   return (
     <Layout>

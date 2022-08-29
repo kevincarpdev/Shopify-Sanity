@@ -24,6 +24,7 @@ import {PRODUCT_VARIANT_FIELDS} from '../../fragments/shopify/productVariant';
 import useSanityQuery from '../../hooks/useSanityQuery';
 import type {SanityCollectionPage} from '../../types';
 import {combineProductsAndModules} from '../../utils/combineProductsAndModules';
+import ReactGA from "react-ga4";
 
 type Props = {
   collectionProductCount: number;
@@ -96,6 +97,10 @@ export default function CollectionRoute({
       products,
     });
   }, []);
+
+  // Google Analytics
+  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.send({ hitType: "pageview", page: handle });
 
   return (
     <Layout>
