@@ -28,7 +28,7 @@ export default function PageRoute({params}: HydrogenRouteProps) {
   const sanitySeo = sanityPage.seo;
 
   // Google Analytics
-  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.initialize("UA-239158215-1");
   ReactGA.send({ hitType: "pageview", page: handle });
 
   return (

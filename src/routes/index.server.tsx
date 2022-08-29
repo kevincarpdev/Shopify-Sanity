@@ -31,7 +31,7 @@ export default function IndexRoute() {
   }
 
   // Google Analytics
-  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.initialize("UA-239158215-1");
   ReactGA.send({ hitType: "pageview" });
 
   return (

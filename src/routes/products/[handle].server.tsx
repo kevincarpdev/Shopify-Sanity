@@ -88,7 +88,7 @@ export default function ProductRoute() {
   const initialVariant = storefrontProduct.variants.nodes[0];
 
   // Google Analytics
-  ReactGA.initialize("G-9JVDV81TM8");
+  ReactGA.initialize("UA-239158215-1");
   ReactGA.send({ hitType: "pageview", page: handle });
 
   return (
