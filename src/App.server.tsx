@@ -4,6 +4,7 @@ import {
   PerformanceMetricsDebug,
   Route,
   Router,
+  ShopifyAnalytics,
   ShopifyProvider,
   useSession,
 } from '@shopify/hydrogen';
@@ -17,7 +18,7 @@ import NotFound from './components/global/NotFound.server';
 
 function App() {
   const session = useSession();
-
+  //countryCode = { session?.countryCode }
   return (
     <Suspense fallback={<LoadingFallback />}>
       <ShopifyProvider>
@@ -31,7 +32,7 @@ function App() {
           </ServerCartProvider>
           <PerformanceMetrics />
           {import.meta.env.DEV && <PerformanceMetricsDebug />}
-          {/* <ShopifyAnalytics /> */}
+          <ShopifyAnalytics />
       </ShopifyProvider>
     </Suspense>
   );
