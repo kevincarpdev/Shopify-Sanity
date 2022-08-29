@@ -18,9 +18,10 @@ import NotFound from './components/global/NotFound.server';
 
 function App() {
   const session = useSession();
+  console.log('session', session);
   return (
     <Suspense fallback={<LoadingFallback />}>
-      <ShopifyProvider countryCode={session?.countryCode} languageCode={session?.languageCode}>
+      <ShopifyProvider countryCode={session?.countryCode} languageCode={session?.countryCode}>
           <ServerCartProvider>
             <DefaultSeo />
             <Router>
