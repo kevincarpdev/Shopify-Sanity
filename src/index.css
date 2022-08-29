@@ -8,6 +8,9 @@
     @apply text-offBlack;
     @apply text-md;
   }
+  body {
+    @apply overflow-x-hidden;
+  }
 }
 
 @layer components {
