@@ -25,8 +25,7 @@ export default function PageHero({colorTheme, fallbackTitle, hero}: Props) {
   return (
     <div
       className={clsx(
-        'rounded-b-xl bg-blue px-4 pb-4 pt-24', //
-        'md:px-8 md:pb-8 md:pt-34',
+        'rounded-b-xl bg-blue pt-36',
       )}
       style={{background: colorTheme?.background}}
     >
@@ -35,7 +34,7 @@ export default function PageHero({colorTheme, fallbackTitle, hero}: Props) {
         <h1
           className={clsx(
             'max-w-[60rem] whitespace-pre-line text-2xl',
-            'md:text-4xl',
+            'md:text-4xl pl-12',
           )}
           style={{color: colorTheme?.text || 'black'}}
         >
