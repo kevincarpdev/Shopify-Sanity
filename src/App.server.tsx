@@ -34,7 +34,7 @@ function App() {
           </ServerCartProvider>
           <PerformanceMetrics />
           {import.meta.env.DEV && <PerformanceMetricsDebug />}
-          <ShopifyAnalytics />
+          {/* <ShopifyAnalytics /> */}
         </LocalizationProvider>
       </ShopifyProvider>
     </Suspense>
