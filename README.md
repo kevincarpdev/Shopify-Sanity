@@ -197,3 +197,8 @@ This repository is published under the [MIT][license] license.
 
 ## Shopify Storefront Password
 `rawshu`
+
+
+## Roadmap
+- Google Optimize - https://github.com/hudovisk/react-optimize 
+- 
